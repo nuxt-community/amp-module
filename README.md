@@ -1,4 +1,4 @@
-# amp-module
+# @nuxtjs/amp
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -13,18 +13,18 @@
 
 ## Setup
 
-1. Add the `amp-module` dependency with `yarn` or `npm` to your project
-2. Add `amp-module` to the `modules` section of `nuxt.config.js`
+1. Add the `@nuxtjs/amp` dependency with `yarn` or `npm` to your project
+2. Add `@nuxtjs/amp` to the `modules` section of `nuxt.config.js`
 3. Configure it:
 
 ```js
 {
   modules: [
     // Simple usage
-    'amp-module',
+    '@nuxtjs/amp',
 
     // With options
-    ['amp-module', { /* module options */ }]
+    ['@nuxtjs/amp', { /* module options */ }]
   ]
 }
 ```
@@ -42,11 +42,11 @@
 Copyright (c) Ahad Birang <farnabaz@gmail.com>
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/dt/amp-module.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/amp-module
+[npm-version-src]: https://img.shields.io/npm/dt/@nuxtjs/amp.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@nuxtjs/amp
 
-[npm-downloads-src]: https://img.shields.io/npm/v/amp-module/latest.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/amp-module
+[npm-downloads-src]: https://img.shields.io/npm/v/@nuxtjs/amp/latest.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/amp
 
 [circle-ci-src]: https://img.shields.io/circleci/project/github/nuxt-community/amp-module.svg?style=flat-square
 [circle-ci-href]: https://circleci.com/gh/nuxt-community/amp-module

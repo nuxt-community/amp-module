@@ -1,4 +1,4 @@
-# @nuxtjs/amp
+# ⚡ @nuxtjs/amp
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -7,7 +7,7 @@
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 
-> 
+> AMP (Accelerated Mobile Pages) Module for Nuxt
 
 [📖 **Release Notes**](./CHANGELOG.md)
 

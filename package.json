@@ -1,7 +1,7 @@
 {
   "name": "@nuxtjs/amp",
   "version": "0.0.0",
-  "description": "",
+  "description": "AMP Module for Nuxt",
   "license": "MIT",
   "contributors": [
     {

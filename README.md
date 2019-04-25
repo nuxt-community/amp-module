@@ -17,6 +17,7 @@
   * [Setup](docs/setup.md)
   * [Middleware](docs/middleware.md)
   * [Usage](docs/usage.md)
+  * [Styling](docs/styling.md)
 * Reference
   * [Tags](docs/tags.md)
 

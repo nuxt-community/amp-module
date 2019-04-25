@@ -11,6 +11,15 @@
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
+## Docs
+* Getting Started
+  * [Introduction](docs/README.md)
+  * [Setup](docs/setup.md)
+  * [Middleware](docs/middleware.md)
+  * [Usage](docs/usage.md)
+* Reference
+  * [Tags](docs/tags.md)
+
 ## Setup
 
 1. Add the `@nuxtjs/amp` dependency with `yarn` or `npm` to your project

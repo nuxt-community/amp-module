@@ -28,7 +28,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
-    "consola": "^2.6.0",
+    "consola": "^2.6.1",
     "qs": "^6.7.0"
   },
   "devDependencies": {
@@ -55,6 +55,6 @@
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "latest",
-    "vue-tweet-embed": "^2.2.1"
+    "vue-tweet-embed": "^2.3.0"
   }
 }

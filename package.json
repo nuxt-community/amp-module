@@ -28,7 +28,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
-    "consola": "^2.6.2",
+    "consola": "^2.9.0",
     "qs": "^6.7.0"
   },
   "devDependencies": {

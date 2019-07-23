@@ -9,6 +9,8 @@
 
 > AMP (Accelerated Mobile Pages) Module for Nuxt
 
+**DEMO**: https://codesandbox.io/s/github/nuxt-community/amp-module/
+
 [📖 **Release Notes**](./CHANGELOG.md)
 
 ## Docs

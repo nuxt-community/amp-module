@@ -5,6 +5,8 @@ const request = require('request-promise-native')
 const getPort = require('get-port')
 
 const config = require('../example/nuxt.config')
+const { isValid } = require('./utils')
+
 config.dev = false
 
 let nuxt, port
@@ -25,8 +27,20 @@ describe('basic', () => {
     await nuxt.close()
   })
 
-  test('render', async () => {
-    const html = await get('/')
-    expect(html).toContain('Works!')
+  test('Render home page', async () => {
+    const html = await get('/amp')
+
+    expect(html).toContain('rel="amphtml"')
+    expect(await isValid(html)).toEqual(true)
+  })
+
+  test('Render AMP version of home page', async () => {
+    const html = await get('/amp')
+    expect(html).toContain('AMP is easy')
+  })
+
+  test('Render AM Story', async () => {
+    const html = await get('/story')
+    expect(html).toContain('MARS')
   })
 })

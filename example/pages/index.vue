@@ -128,12 +128,12 @@
 
 <script>
 export default {
-  head() {
+  head () {
     return {
       title: 'AMP module for Nuxtjs',
       script: [
         {
-          async: '',
+          async: true,
           'custom-element': 'amp-bind',
           src: 'https://cdn.ampproject.org/v0/amp-bind-0.1.js'
         }

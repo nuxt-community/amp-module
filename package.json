@@ -54,7 +54,7 @@
     "nuxt-edge": "^2.9.0-26074089.edf5e66e",
     "request": "latest",
     "request-promise-native": "latest",
-    "standard-version": "^6.0.1",
+    "standard-version": "^7.0.0",
     "vue-tweet-embed": "^2.3.0"
   }
 }

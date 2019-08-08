@@ -42,5 +42,8 @@ describe('basic', () => {
   test('Render AM Story', async () => {
     const html = await get('/story')
     expect(html).toContain('MARS')
+
+    expect(html).toContain('rel="amphtml"')
+    expect(await isValid(html)).toEqual(true)
   })
 })

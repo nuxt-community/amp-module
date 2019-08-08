@@ -1,4 +1,4 @@
-# AMP Middleware
+# Middleware
 
 You can enable `amp` middleware either globally or per route.
 

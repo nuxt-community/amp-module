@@ -1,4 +1,4 @@
-# Tags
+# AMP elements
 `amp-module` automatically detect AMP elements inside page and inject required scripts.  
 List of auto detected AMP elements:
 - [amp-3d-gltf](https://amp.dev/documentation/components/amp-3d-gltf)

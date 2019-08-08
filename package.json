@@ -28,7 +28,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
-    "consola": "^2.10.0",
+    "consola": "^2.10.1",
     "qs": "^6.7.0"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "latest",
@@ -51,7 +51,7 @@
     "get-port": "latest",
     "husky": "^3.0.2",
     "jest": "^24.8.0",
-    "nuxt-edge": "^2.9.0-26082730.da4615a1",
+    "nuxt-edge": "^2.9.0-26087050.09878cd6",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "^7.0.0",

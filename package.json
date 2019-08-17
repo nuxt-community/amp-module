@@ -29,7 +29,7 @@
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
     "consola": "^2.10.1",
-    "qs": "^6.7.0"
+    "qs": "^6.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -49,9 +49,9 @@
     "eslint-plugin-standard": "latest",
     "eslint-plugin-vue": "^5.2.3",
     "get-port": "latest",
-    "husky": "^3.0.3",
+    "husky": "^3.0.4",
     "jest": "^24.9.0",
-    "nuxt-edge": "^2.9.0-26098571.2ad6bf2a",
+    "nuxt-edge": "^2.9.0-26100010.2ad6bf2a",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "^7.0.0",

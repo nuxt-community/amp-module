@@ -28,22 +28,20 @@ describe('basic', () => {
   })
 
   test('Render home page', async () => {
-    const html = await get('/amp')
+    const html = await get('/')
 
     expect(html).toContain('rel="amphtml"')
-    expect(await isValid(html)).toEqual(true)
   })
 
   test('Render AMP version of home page', async () => {
     const html = await get('/amp')
+    expect(await isValid(html)).toEqual(true)
     expect(html).toContain('AMP is easy')
   })
 
-  test('Render AM Story', async () => {
+  test('Render AMP Story', async () => {
     const html = await get('/story')
     expect(html).toContain('MARS')
-
-    expect(html).toContain('rel="amphtml"')
     expect(await isValid(html)).toEqual(true)
   })
 })

@@ -32,8 +32,8 @@
     "qs": "^6.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@nuxtjs/eslint-config": "^1.1.2",
@@ -51,7 +51,7 @@
     "get-port": "latest",
     "husky": "^3.0.5",
     "jest": "^24.9.0",
-    "nuxt-edge": "^2.10.0-26128283.86179c41",
+    "nuxt-edge": "^2.10.0-26130255.e9c4bcfe",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "^7.0.0",

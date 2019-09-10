@@ -51,9 +51,10 @@
     "get-port": "latest",
     "husky": "^3.0.5",
     "jest": "^24.9.0",
-    "nuxt-edge": "^2.10.0-26134574.e9c4bcfe",
+    "jest-puppeteer": "^4.3.0",
+    "nuxt-edge": "^2.10.0-26128283.86179c41",
+    "puppeteer": "^1.19.0",
     "request": "latest",
-    "request-promise-native": "latest",
     "standard-version": "^7.0.0",
     "vue-tweet-embed": "^2.3.0"
   }

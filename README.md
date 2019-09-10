@@ -21,10 +21,10 @@
   * [Usage](docs/guide/usage.md)
   * [Styling](docs/guide/styling.md)
 * Reference
-  * [API](docs/tags.md)
-    * [Options](./options.md)
-    * [AMP elements](./amp-elements.md)
-    * [Components](./components.md)
+  * [API](docs/api/readme.md)
+    * [Options](docs/api/options.md)
+    * [AMP elements](docs/api/amp-elements.md)
+    * [Components](docs/api/components.md)
 
 
 ## Setup

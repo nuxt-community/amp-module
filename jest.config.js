@@ -1,5 +1,5 @@
 module.exports = {
-  testEnvironment: 'node',
+  preset: 'jest-puppeteer',
   collectCoverage: true,
   collectCoverageFrom: [
     'lib/**/*.js',

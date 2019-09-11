@@ -16,12 +16,16 @@
 ## Docs
 * Getting Started
   * [Introduction](docs/README.md)
-  * [Setup](docs/setup.md)
-  * [Middleware](docs/middleware.md)
-  * [Usage](docs/usage.md)
-  * [Styling](docs/styling.md)
+  * [Setup](docs/guide/setup.md)
+  * [Middleware](docs/guide/middleware.md)
+  * [Usage](docs/guide/usage.md)
+  * [Styling](docs/guide/styling.md)
 * Reference
-  * [Tags](docs/tags.md)
+  * [API](docs/api/readme.md)
+    * [Options](docs/api/options.md)
+    * [AMP elements](docs/api/amp-elements.md)
+    * [Components](docs/api/components.md)
+
 
 ## Setup
 

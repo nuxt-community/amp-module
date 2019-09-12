@@ -115,7 +115,7 @@ describe('Render AMP Story', () => {
   })
 
   test('Detect all tags', () => {
-    const expected = [ 'amp-story', 'amp-video', 'amp-animation', 'amp-social-share' ]
+    const expected = [ 'amp-story', 'amp-video' ]
     expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
   })
 

@@ -13,10 +13,11 @@ let nuxt, port
 const url = path => `http://localhost:${port}${path}`
 
 beforeAll(async () => {
+  port = await getPort()
+  config.amp.origin = `http://localhost:${port}`
   nuxt = new Nuxt(config)
   await nuxt.ready()
   await new Builder(nuxt).build()
-  port = await getPort()
   await nuxt.listen(port)
 })
 
@@ -114,7 +115,7 @@ describe('Render AMP Story', () => {
   })
 
   test('Detect all tags', () => {
-    const expected = [ 'amp-story', 'amp-video', 'amp-animation', 'amp-social-share' ]
+    const expected = [ 'amp-story', 'amp-video' ]
     expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
   })
 

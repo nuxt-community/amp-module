@@ -40,7 +40,7 @@ describe('Plugin', () => {
   it('Detect non AMP page', () => {
     Plugin.default({ route }, inject)
     expect(proto.isAMP).toEqual(false)
-    expect(proto.ampMode).toEqual('hybrid')
+    expect(proto.ampMode).toEqual(false)
   })
 
   it('Detect AMP from route meta', () => {

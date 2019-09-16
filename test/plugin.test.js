@@ -1,5 +1,3 @@
-jest.mock('../lib/middleware', () => ({}), { virtual: true })
-
 const Plugin = require('../lib/amp/plugin')
 
 describe('Plugin', () => {

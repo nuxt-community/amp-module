@@ -1,12 +1,11 @@
 const Plugin = require('../lib/amp/plugin')
 
 describe('Plugin', () => {
-  let proto, route
+  let route, ctx
   const inject = (name, value) => {
-    proto[name] = value
+    ctx.app[`$${name}`] = value
   }
   beforeEach(() => {
-    proto = {}
     route = {
       meta: {},
       path: '/',
@@ -20,45 +19,91 @@ describe('Plugin', () => {
         }
       ]
     }
+    ctx = {
+      route,
+      app: {}
+    }
   })
 
   it('Inject `isAMP` and `ampMode`', () => {
     Plugin.default({ route }, inject)
-    expect(proto).toHaveProperty('isAMP')
-    expect(proto).toHaveProperty('ampMode')
+    expect(ctx.app).toHaveProperty('$isAMP')
+    expect(ctx.app).toHaveProperty('$ampMode')
   })
 
   it('Do nothing if matched routes are empty', () => {
     route.matched = []
     Plugin.default({ route }, inject)
-    expect(proto.isAMP).toBeUndefined()
-    expect(proto.ampMode).toBeUndefined()
+    expect(ctx.app.$isAMP).toBeUndefined()
+    expect(ctx.app.$ampMode).toBeUndefined()
   })
 
   it('Detect non AMP page', () => {
     Plugin.default({ route }, inject)
-    expect(proto.isAMP).toEqual(false)
-    expect(proto.ampMode).toEqual(false)
+    expect(ctx.app.$isAMP).toEqual(false)
+    expect(ctx.app.$ampMode).toEqual(false)
   })
 
-  it('Detect AMP from route meta', () => {
+  it('Detect non AMP from route meta (hybrid)', () => {
+    route.meta.amp = 'hybrid'
+    Plugin.default({ route }, inject)
+    expect(ctx.app.$isAMP).toEqual(false)
+    expect(ctx.app.$ampMode).toEqual('hybrid')
+  })
+
+  it('Detect AMP from route meta (only)', () => {
     route.meta.amp = 'only'
     Plugin.default({ route }, inject)
-    expect(proto.isAMP).toEqual(true)
-    expect(proto.ampMode).toEqual('only')
+    expect(ctx.app.$isAMP).toEqual(true)
+    expect(ctx.app.$ampMode).toEqual('only')
+  })
+
+  it('Detect AMP from route meta (hybrid)', () => {
+    route.meta.amp = 'hybrid'
+    route.path = '/amp'
+    Plugin.default({ route }, inject)
+    expect(ctx.app.$isAMP).toEqual(true)
+    expect(ctx.app.$ampMode).toEqual('hybrid')
   })
 
   it('Detect AMP from route component options', () => {
     route.matched[0].components.default.options.amp = 'only'
     Plugin.default({ route }, inject)
-    expect(proto.isAMP).toEqual(true)
-    expect(proto.ampMode).toEqual('only')
+    expect(ctx.app.$isAMP).toEqual(true)
+    expect(ctx.app.$ampMode).toEqual('only')
   })
 
   it('Detect non AMP from route component options', () => {
     route.matched[0].components.default.options.amp = false
     Plugin.default({ route }, inject)
-    expect(proto.isAMP).toEqual(false)
-    expect(proto.ampMode).toEqual(false)
+    expect(ctx.app.$isAMP).toEqual(false)
+    expect(ctx.app.$ampMode).toEqual(false)
+  })
+
+  it('Evaluate ampLayout option', () => {
+    route.matched[0].components.default.options.amp = 'only'
+    route.matched[0].components.default.options.ampLayout = function () {
+      return 'custom.amp.layout'
+    }
+    Plugin.default({ route }, inject)
+    expect(route.matched[0].components.default.options.layout({ app: { $isAMP: true } })).toEqual('custom.amp.layout')
+  })
+
+  it('Evaluate layout option (AMP)', () => {
+    route.matched[0].components.default.options.amp = 'only'
+    route.matched[0].components.default.options.layout = function () {
+      return 'custom.amp.layout'
+    }
+    Plugin.default({ route }, inject)
+    expect(route.matched[0].components.default.options.layout({ app: { $isAMP: true } })).toEqual('custom.amp.layout.amp')
+  })
+
+  it('Evaluate layout option (non AMP)', () => {
+    route.matched[0].components.default.options.amp = 'hybrid'
+    route.matched[0].components.default.options.layout = function () {
+      return 'custom.amp.layout'
+    }
+    Plugin.default(ctx, inject)
+    expect(route.matched[0].components.default.options.layout(ctx)).toEqual('custom.amp.layout')
   })
 })

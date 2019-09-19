@@ -95,7 +95,7 @@ describe('Plugin', () => {
       return 'custom.amp.layout'
     }
     Plugin.default(ctx, inject)
-    expect(route.matched[0].components.default.options.layout(ctx)).toEqual('custom.amp.layout.amp')
+    expect(route.matched[0].components.default.options.layout(ctx)).toEqual('custom.amp.layout')
   })
 
   it('Evaluate layout option (non AMP)', () => {

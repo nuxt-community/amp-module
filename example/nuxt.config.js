@@ -12,10 +12,5 @@ module.exports = {
   ],
   amp: {
     origin: 'http://localhost:3000'
-  },
-  router: {
-    middleware: [
-      'amp'
-    ]
   }
 }

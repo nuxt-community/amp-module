@@ -17,7 +17,6 @@
 * Getting Started
   * [Introduction](docs/README.md)
   * [Setup](docs/guide/setup.md)
-  * [Middleware](docs/guide/middleware.md)
   * [Usage](docs/guide/usage.md)
   * [Styling](docs/guide/styling.md)
 * Reference

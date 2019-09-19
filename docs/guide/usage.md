@@ -1,7 +1,7 @@
 # Usage
 
 ## Create Layout
-Before starting to create pages you need to create a layout for AMP called `default.amp.vue`
+Before starting to create pages you may need to create a layout for AMP page (let's call it `default.amp.vue`)
 
 ```vue
 <template>
@@ -10,12 +10,10 @@ Before starting to create pages you need to create a layout for AMP called `defa
   </div>
 </template>
 ```
-> If you're using your custom layout for your page (lets call it `foo`) you must create layout a layout `foo.amp.vue` for AMP version of your page
 
 ## Create Page
 Creating AMP page is same as non-AMP page, create a Vue file in `pages` folder and start creating your page.
-If you want to have a page that generate both AMP and non-AMP html, you can use `$isAMP` variable to conditionally
-show components.
+If you want to have a page that generate both AMP and non-AMP html, you can use `$isAMP` variable to conditionally show/hide components.
 
 `amp-module` inject `$isAMP` on Vue context in order to determine type of current page render.
 
@@ -31,7 +29,8 @@ show components.
 
 <script>
 export default {
-    middleware: 'amp',
+    amp: 'hybrid',
+    ampLayout: 'default.amp',
 }
 </script>
 ```
@@ -45,7 +44,8 @@ You can use `this.$isAMP` inside page script to check if this is AMP generation 
 
 <script>
 export default {
-    middleware: 'amp',
+    amp: 'hybrid',
+    ampLayout: 'default.amp',
     ...
     mounted() {
         // fetch list of entities on normal page

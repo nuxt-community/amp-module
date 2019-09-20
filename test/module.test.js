@@ -44,6 +44,10 @@ describe('Render home page', () => {
   test('Valid amphtml link', () => {
     expect(info.amphtml).toEqual(`http://localhost:${port}/amp/`)
   })
+
+  test('Shouldn\'t have canonical link', () => {
+    expect(info.canonical).toBeNull()
+  })
 })
 
 describe('Render AMP version of home page', () => {
@@ -67,7 +71,7 @@ describe('Render AMP version of home page', () => {
     source = await response.text()
   })
 
-  test("Souldn't have amphtml link", () => {
+  test("Shouldn't have amphtml link", () => {
     expect(info.amphtml).toBeNull()
   })
 

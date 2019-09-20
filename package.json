@@ -29,6 +29,7 @@
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
     "consola": "^2.10.1",
+    "nuxt-i18n": "^6.2.1",
     "qs": "^6.8.0"
   },
   "devDependencies": {

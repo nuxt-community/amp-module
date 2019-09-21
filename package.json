@@ -28,9 +28,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.23",
     "chalk": "^2.4.2",
-    "consola": "^2.10.1",
-    "nuxt-i18n": "^6.2.1",
-    "qs": "^6.8.0"
+    "consola": "^2.10.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
@@ -54,9 +52,9 @@
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.3.0",
     "nuxt-edge": "^2.10.0-26150413.e9c4bcfe",
+    "nuxt-i18n": "^6.2.1",
     "puppeteer": "^1.20.0",
     "request": "latest",
-    "standard-version": "^7.0.0",
-    "vue-tweet-embed": "^2.3.0"
+    "standard-version": "^7.0.0"
   }
 }

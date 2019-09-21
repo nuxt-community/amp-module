@@ -25,6 +25,19 @@ afterAll(async () => {
   await nuxt.close()
 })
 
+describe('Generates routes', () => {
+  let routes
+  beforeAll(() => {
+    routes = nuxt.options.router.routes
+  })
+
+  test('Routes should be correctly localized', () => {
+    routes.forEach((route) => {
+      expect(route.alias).toEqual(`/amp${route.path}`)
+    })
+  })
+})
+
 describe('Render home page', () => {
   let info
   beforeAll(async () => {
@@ -44,6 +57,10 @@ describe('Render home page', () => {
   test('Valid amphtml link', () => {
     expect(info.amphtml).toEqual(`http://localhost:${port}/amp/`)
   })
+
+  test('Shouldn\'t have canonical link', () => {
+    expect(info.canonical).toBeNull()
+  })
 })
 
 describe('Render AMP version of home page', () => {
@@ -52,6 +69,7 @@ describe('Render AMP version of home page', () => {
     const response = await page.goto(url('/amp'))
 
     info = await page.evaluate(() => {
+      const ampAttr = document.documentElement.getAttribute('amp')
       const canonical = document.querySelector('[rel=canonical]').getAttribute('href')
       const amphtml = document.querySelector('[rel=amphtml]')
 
@@ -59,6 +77,7 @@ describe('Render AMP version of home page', () => {
         .map(a => a.getAttribute('custom-element') || a.getAttribute('custom-template'))
 
       return {
+        ampAttr,
         detectedTags,
         canonical,
         amphtml
@@ -67,7 +86,11 @@ describe('Render AMP version of home page', () => {
     source = await response.text()
   })
 
-  test("Souldn't have amphtml link", () => {
+  test('Should have amp html attribute', () => {
+    expect(info.ampAttr).toEqual('')
+  })
+
+  test('Shouldn\'t have amphtml link', () => {
     expect(info.amphtml).toBeNull()
   })
 

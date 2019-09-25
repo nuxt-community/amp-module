@@ -31,8 +31,8 @@
     "consola": "^2.10.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@nuxtjs/eslint-config": "^1.1.2",
@@ -51,7 +51,7 @@
     "husky": "^3.0.5",
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.3.0",
-    "nuxt-edge": "^2.10.0-26150413.e9c4bcfe",
+    "nuxt-edge": "^2.10.0-26156173.e9c4bcfe",
     "nuxt-i18n": "^6.2.1",
     "puppeteer": "^1.20.0",
     "request": "latest",

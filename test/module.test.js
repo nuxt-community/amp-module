@@ -146,3 +146,13 @@ describe('Render AMP Story', () => {
     expect(await isValid(source)).toEqual(true)
   })
 })
+
+describe('Render disabled amp page', () => {
+  beforeAll(async () => {
+    await page.goto(url('/amp/noamp'))
+  })
+
+  test('404 for not amp pages', async () => {
+    await expect(page).toMatch('This page could not be found')
+  })
+})

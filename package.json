@@ -26,7 +26,7 @@
     "lib"
   ],
   "dependencies": {
-    "amphtml-validator": "^1.0.23",
+    "amphtml-validator": "^1.0.26",
     "chalk": "^2.4.2",
     "consola": "^2.10.1"
   },
@@ -51,7 +51,7 @@
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.3.0",
-    "nuxt-edge": "^2.10.0-26187855.e9c4bcfe",
+    "nuxt-edge": "^2.10.0-26190734.e9c4bcfe",
     "nuxt-i18n": "^6.3.0",
     "puppeteer": "^1.20.0",
     "request": "latest",

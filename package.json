@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "amphtml-validator": "^1.0.23",
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "consola": "^2.10.1"
   },
   "devDependencies": {

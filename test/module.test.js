@@ -33,7 +33,7 @@ describe('Generates routes', () => {
 
   test('Routes should be correctly localized', () => {
     routes.forEach((route) => {
-      expect(route.alias).toEqual(`/amp${route.path}`)
+      expect(route.alias).toEqual([`/amp${route.path}`])
     })
   })
 })

@@ -48,7 +48,7 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "^6.0.1",
     "get-port": "latest",
-    "husky": "^3.0.9",
+    "husky": "^4.0.10",
     "jest": "^24.9.0",
     "jest-puppeteer": "^4.3.0",
     "nuxt-edge": "^2.10.0-26187855.e9c4bcfe",

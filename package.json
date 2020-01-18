@@ -26,35 +26,35 @@
     "lib"
   ],
   "dependencies": {
-    "amphtml-validator": "^1.0.23",
+    "amphtml-validator": "^1.0.29",
     "chalk": "^3.0.0",
-    "consola": "^2.10.1"
+    "consola": "^2.11.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-conventional": "^8.2.0",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@nuxtjs/eslint-config": "^1.1.2",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "codecov": "^3.6.1",
-    "eslint": "^6.5.1",
+    "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.0.2",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-vue": "^6.0.1",
+    "eslint-plugin-vue": "^6.1.2",
     "get-port": "latest",
     "husky": "^4.0.10",
     "jest": "^24.9.0",
-    "jest-puppeteer": "^4.3.0",
-    "nuxt-edge": "^2.10.0-26187855.e9c4bcfe",
-    "nuxt-i18n": "^6.3.0",
+    "jest-puppeteer": "^4.4.0",
+    "nuxt-edge": "^2.10.0-26321775.e9c4bcfe",
+    "nuxt-i18n": "^6.4.1",
     "puppeteer": "^2.0.0",
     "request": "latest",
-    "standard-version": "^7.0.0"
+    "standard-version": "^7.0.1"
   }
 }

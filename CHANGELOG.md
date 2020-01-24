@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/nuxt-community/amp-module/compare/v0.2.1...v0.2.2) (2020-01-24)
+
+
+### Bug Fixes
+
+* **route-alis:** preserve route previous aliases ([#91](https://github.com/nuxt-community/amp-module/issues/91)) ([91f3c80](https://github.com/nuxt-community/amp-module/commit/91f3c80e297df90a1b0d357fc7e432fa7b977691))
+* Support amp-bind alternative syntax ([#85](https://github.com/nuxt-community/amp-module/issues/85)) ([b39b846](https://github.com/nuxt-community/amp-module/commit/b39b846a54007408389bdb6022e18b1e07185d1c))
+
 ### [0.2.1](https://github.com/nuxt-community/amp-module/compare/v0.2.0...v0.2.1) (2019-10-25)
 
 

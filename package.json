@@ -41,7 +41,7 @@
     "codecov": "^3.6.4",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
@@ -53,7 +53,7 @@
     "jest-puppeteer": "^4.4.0",
     "nuxt-edge": "^2.10.0-26326094.e9c4bcfe",
     "nuxt-i18n": "^6.5.0",
-    "puppeteer": "^2.1.0",
+    "puppeteer": "^2.1.1",
     "request": "latest",
     "standard-version": "^7.1.0"
   }

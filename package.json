@@ -26,7 +26,7 @@
     "lib"
   ],
   "dependencies": {
-    "amphtml-validator": "^1.0.29",
+    "amphtml-validator": "^1.0.30",
     "chalk": "^3.0.0",
     "consola": "^2.11.3"
   },
@@ -48,7 +48,7 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "get-port": "latest",
-    "husky": "^4.2.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
     "jest-puppeteer": "^4.4.0",
     "nuxt-edge": "^2.10.0-26326094.e9c4bcfe",

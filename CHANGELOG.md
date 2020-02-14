@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/nuxt-community/amp-module/compare/v0.2.2...v0.2.3) (2020-02-14)
+
+
+### Bug Fixes
+
+* **amp-fx:** provide amp-fx regex ([348aad5](https://github.com/nuxt-community/amp-module/commit/348aad5593fb33ebb9319ee3a94620ae80eaf869))
+
 ### [0.2.2](https://github.com/nuxt-community/amp-module/compare/v0.2.1...v0.2.2) (2020-01-24)
 
 

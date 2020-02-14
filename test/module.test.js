@@ -147,6 +147,37 @@ describe('Render AMP Story', () => {
   })
 })
 
+describe('Render amp-fx example', () => {
+  let source, info
+  beforeAll(async () => {
+    const response = await page.goto(url('/amp-fx'))
+
+    info = await page.evaluate(() => {
+      const canonical = document.querySelector('[rel=canonical]').getAttribute('href')
+      const amphtml = document.querySelector('[rel=amphtml]')
+
+      const detectedTags = [...document.querySelectorAll('script[custom-element],script[custom-template]')]
+        .map(a => a.getAttribute('custom-element') || a.getAttribute('custom-template'))
+
+      return {
+        detectedTags,
+        canonical,
+        amphtml
+      }
+    })
+    source = await response.text()
+  })
+
+  test('Detect all tags', () => {
+    const expected = [ 'amp-fx-collection' ]
+    expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
+  })
+
+  test('Valid AMP structure', async () => {
+    expect(await isValid(source)).toEqual(true)
+  })
+})
+
 describe('Render disabled amp page', () => {
   beforeAll(async () => {
     await page.goto(url('/amp/noamp'))

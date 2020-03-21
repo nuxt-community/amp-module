@@ -104,7 +104,7 @@ describe('Render AMP version of home page', () => {
   })
 
   test('Detect all tags', () => {
-    const expected = [ 'amp-carousel', 'amp-list', 'amp-bind', 'amp-mustache' ]
+    const expected = ['amp-carousel', 'amp-list', 'amp-bind', 'amp-mustache']
     expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
   })
 
@@ -143,7 +143,7 @@ describe('Render AMP Story', () => {
   })
 
   test('Detect all tags', () => {
-    const expected = [ 'amp-story', 'amp-video' ]
+    const expected = ['amp-story', 'amp-video']
     expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
   })
 
@@ -174,7 +174,7 @@ describe('Render amp-fx example', () => {
   })
 
   test('Detect all tags', () => {
-    const expected = [ 'amp-fx-collection' ]
+    const expected = ['amp-fx-collection']
     expect(info.detectedTags).toEqual(expect.arrayContaining(expected))
   })
 

@@ -3,10 +3,8 @@ jest.setTimeout(60000)
 const { Nuxt, Builder } = require('nuxt-edge')
 const getPort = require('get-port')
 
-const config = require('../example/nuxt.config')
+const defaultConfig = require('../example/nuxt.config')
 const { isValid } = require('./utils')
-
-config.dev = false
 
 let nuxt, port
 
@@ -14,7 +12,14 @@ const url = path => `http://localhost:${port}${path}`
 
 beforeAll(async () => {
   port = await getPort()
-  config.amp.origin = `http://localhost:${port}`
+  const config = {
+    ...defaultConfig,
+    dev: false,
+    amp: {
+      ...(defaultConfig.amp || {}),
+      origin: `http://localhost:${port}`
+    }
+  }
   nuxt = new Nuxt(config)
   await nuxt.ready()
   await new Builder(nuxt).build()

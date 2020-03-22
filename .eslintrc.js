@@ -13,4 +13,7 @@ module.exports = {
     context: true,
     jestPuppeteer: true,
   },
+  rules: {
+    'quote-props': [0]
+  }
 }

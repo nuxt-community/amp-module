@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/nuxt-community/amp-module/compare/v0.2.3...v0.2.4) (2020-03-24)
+
+
+### Features
+
+* **custom-routes:** create an option to define AMP pages ([81c5717](https://github.com/nuxt-community/amp-module/commit/81c57175614b4484b3708380cc60c1e3e9595568))
+* **custom-tags:** introduce tags option to modify tags detection ([d08b769](https://github.com/nuxt-community/amp-module/commit/d08b7697123eb96d8684e315037c8cb97fba0fcd))
+
 ### [0.2.3](https://github.com/nuxt-community/amp-module/compare/v0.2.2...v0.2.3) (2020-02-14)
 
 

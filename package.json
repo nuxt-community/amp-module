@@ -51,7 +51,7 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "jest-puppeteer": "^4.4.0",
-    "nuxt-edge": "^2.12.1-26416816.af3cffc3",
+    "nuxt-edge": "^2.13.1-26542102.dbecbe4a",
     "nuxt-i18n": "^6.6.1",
     "puppeteer": "^2.1.1",
     "request": "2.88.2",

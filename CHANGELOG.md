@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/nuxt-community/amp-module/compare/v0.2.4...v0.3.0) (2020-07-16)
+
+
+### Features
+
+* support static site generation on Nuxt 2.13+ ([31f27ad](https://github.com/nuxt-community/amp-module/commit/31f27ad3fbe805aa34a91fa9a894cede42560f36))
+* upgrade amp-carousel to v0.2 ([c82f49e](https://github.com/nuxt-community/amp-module/commit/c82f49e753c792a8c222689658f624ca7ce0f07e)), closes [#150](https://github.com/nuxt-community/amp-module/issues/150)
+
+
+### Bug Fixes
+
+* add amp-lightbox-gallery regex ([ce43a80](https://github.com/nuxt-community/amp-module/commit/ce43a80673005a3bd5932d336e7cef282fac13eb)), closes [#153](https://github.com/nuxt-community/amp-module/issues/153)
+
 ### [0.2.4](https://github.com/nuxt-community/amp-module/compare/v0.2.3...v0.2.4) (2020-03-24)
 
 

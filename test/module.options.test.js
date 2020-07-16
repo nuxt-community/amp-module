@@ -6,12 +6,11 @@ const getPort = require('get-port')
 const defaultConfig = require('../example/nuxt.config')
 const { isValid } = require('./utils')
 
-let nuxt, port
-
-const url = path => `http://localhost:${port}${path}`
+let nuxt, url
 
 beforeAll(async () => {
-  port = await getPort({ port: getPort.makeRange(3000, 3100) })
+  const port = await getPort({ port: getPort.makeRange(3000, 3100) })
+  url = path => `http://localhost:${port}${path}`
   const config = {
     ...defaultConfig,
     dev: false,
@@ -26,11 +25,11 @@ beforeAll(async () => {
   nuxt = new Nuxt(config)
   await nuxt.ready()
   await new Builder(nuxt).build()
-  await nuxt.listen(port)
+  return await nuxt.listen(port)
 })
 
 afterAll(async () => {
-  await nuxt.close()
+  return await nuxt.close()
 })
 
 describe('Change amp-mustache version', () => {

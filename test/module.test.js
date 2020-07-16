@@ -6,12 +6,10 @@ const getPort = require('get-port')
 const defaultConfig = require('../example/nuxt.config')
 const { isValid } = require('./utils')
 
-let nuxt, port
-
-const url = path => `http://localhost:${port}${path}`
-
+let nuxt, url
 beforeAll(async () => {
-  port = await getPort({ port: getPort.makeRange(3100, 3200) })
+  const port = await getPort({ port: getPort.makeRange(3100, 3200) })
+  url = path => `http://localhost:${port}${path}`
   const config = {
     ...defaultConfig,
     dev: false,
@@ -23,11 +21,11 @@ beforeAll(async () => {
   nuxt = new Nuxt(config)
   await nuxt.ready()
   await new Builder(nuxt).build()
-  await nuxt.listen(port)
+  return await nuxt.listen(port)
 })
 
 afterAll(async () => {
-  await nuxt.close()
+  return await nuxt.close()
 })
 
 describe('Generates routes', () => {
@@ -60,7 +58,7 @@ describe('Render home page', () => {
   })
 
   test('Valid amphtml link', () => {
-    expect(info.amphtml).toEqual(`http://localhost:${port}/amp/`)
+    expect(info.amphtml).toEqual(url('/amp/'))
   })
 
   test('Shouldn\'t have canonical link', () => {
@@ -100,7 +98,7 @@ describe('Render AMP version of home page', () => {
   })
 
   test('Valid canonical link', () => {
-    expect(info.canonical).toEqual(`http://localhost:${port}`)
+    expect(info.canonical).toEqual(url(''))
   })
 
   test('Detect all tags', () => {
@@ -139,7 +137,7 @@ describe('Render AMP Story', () => {
   })
 
   test('Valid canonical link', () => {
-    expect(info.canonical).toEqual(`http://localhost:${port}/story`)
+    expect(info.canonical).toEqual(url('/story'))
   })
 
   test('Detect all tags', () => {

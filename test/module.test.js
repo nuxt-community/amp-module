@@ -11,7 +11,7 @@ let nuxt, port
 const url = path => `http://localhost:${port}${path}`
 
 beforeAll(async () => {
-  port = await getPort()
+  port = await getPort({ port: getPort.makeRange(3100, 3200) })
   const config = {
     ...defaultConfig,
     dev: false,

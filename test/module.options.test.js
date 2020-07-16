@@ -13,6 +13,7 @@ beforeAll(async () => {
   url = path => `http://localhost:${port}${path}`
   const config = {
     ...defaultConfig,
+    buildDir: '.nuxt/test.module.options',
     dev: false,
     amp: {
       ...(defaultConfig.amp || {}),

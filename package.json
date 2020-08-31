@@ -55,6 +55,6 @@
     "nuxt-i18n": "^6.13.1",
     "puppeteer": "^4.0.1",
     "request": "2.88.2",
-    "standard-version": "^8.0.2"
+    "standard-version": "^9.0.0"
   }
 }

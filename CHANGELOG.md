@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/nuxt-community/amp-module/compare/v0.3.0...v0.4.0) (2020-09-03)
+
+
+### Features
+
+* **tags:** support `amp-inline-gallery` tag ([b95ae98](https://github.com/nuxt-community/amp-module/commit/b95ae981592a1caf420938ccaf58b96a3818186e)), closes [#161](https://github.com/nuxt-community/amp-module/issues/161)
+* **tags:** support `amp-inputmask` tag ([1210e5d](https://github.com/nuxt-community/amp-module/commit/1210e5dadb0f027893d78d75f7ae41a3c267479d)), closes [#162](https://github.com/nuxt-community/amp-module/issues/162)
+
+
+### Bug Fixes
+
+* **module:** handle undefined routes ([bceda93](https://github.com/nuxt-community/amp-module/commit/bceda93f1791ffb13b08bea3bf3de350f804863f)), closes [#166](https://github.com/nuxt-community/amp-module/issues/166)
+
 ## [0.3.0](https://github.com/nuxt-community/amp-module/compare/v0.2.4...v0.3.0) (2020-07-16)
 
 

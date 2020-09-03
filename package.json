@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/amp",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "AMP Module for Nuxt",
   "license": "MIT",
   "contributors": [
@@ -26,35 +26,35 @@
     "lib"
   ],
   "dependencies": {
-    "amphtml-validator": "^1.0.31",
+    "amphtml-validator": "^1.0.33",
     "chalk": "^4.1.0",
-    "consola": "^2.14.0"
+    "consola": "^2.15.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-conventional": "^9.1.1",
-    "@nuxtjs/eslint-config": "^3.0.0",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@nuxtjs/eslint-config": "^3.1.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.5.1",
-    "codecov": "^3.7.0",
+    "babel-jest": "^26.3.0",
+    "codecov": "^3.7.2",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "^6.2.2",
     "get-port": "5.1.1",
     "husky": "^4.2.5",
-    "jest": "^25.5.4",
+    "jest": "^26.4.2",
     "jest-puppeteer": "^4.4.0",
     "nuxt-edge": "^2.13.1-26548796.11a87d85",
-    "nuxt-i18n": "^6.13.1",
-    "puppeteer": "^4.0.1",
+    "nuxt-i18n": "^6.13.12",
+    "puppeteer": "^5.2.1",
     "request": "2.88.2",
-    "standard-version": "^8.0.2"
+    "standard-version": "^9.0.0"
   }
 }

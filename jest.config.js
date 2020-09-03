@@ -12,6 +12,10 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/lib/$1'
   },
   transform: {
-    '^.+\\.js$': 'babel-jest'
-  }
+    // process js with `babel-jest`
+    '^.+\\.js$': '<rootDir>/node_modules/babel-jest'
+  },
+  transformIgnorePatterns: [
+    '/node_modules/(?!nuxt-i18n).+\\.js$'
+  ]
 }

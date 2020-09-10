@@ -52,7 +52,7 @@
     "jest": "^26.4.2",
     "jest-puppeteer": "^4.4.0",
     "nuxt-edge": "^2.13.1-26548796.11a87d85",
-    "nuxt-i18n": "^6.14.2",
+    "nuxt-i18n": "^6.15.0",
     "puppeteer": "^5.2.1",
     "request": "2.88.2",
     "standard-version": "^9.0.0"

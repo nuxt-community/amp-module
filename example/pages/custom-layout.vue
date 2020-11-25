@@ -7,7 +7,7 @@
 <script>
 export default {
   amp: 'only',
-  amplayout: 'custom-amp-layout',
+  ampLayout: 'custom-amp-layout',
   layout: 'custom'
 }
 </script>

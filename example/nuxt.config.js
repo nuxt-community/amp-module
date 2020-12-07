@@ -32,7 +32,7 @@ module.exports = {
     { handler: require('../') }
   ],
   amp: {
-    css: '~/assets/styles/amp-custom.css',
+    css: '~/assets/styles/amp-custom.scss',
     origin: 'http://localhost:3000'
   }
 }

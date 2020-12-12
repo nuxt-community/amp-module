@@ -28,7 +28,8 @@
   "dependencies": {
     "amphtml-validator": "^1.0.33",
     "chalk": "^4.1.0",
-    "consola": "^2.15.0"
+    "consola": "^2.15.0",
+    "raw-loader": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -51,10 +52,12 @@
     "husky": "^4.3.5",
     "jest": "^26.6.3",
     "jest-puppeteer": "^4.4.0",
-    "nuxt-edge": "^2.13.1-26548796.11a87d85",
+    "node-sass": "^5.0.0",
+    "nuxt-edge": "^2.14.8-26776834.e02fecdf",
     "nuxt-i18n": "^6.16.0",
     "puppeteer": "^5.5.0",
     "request": "2.88.2",
+    "sass-loader": "^10.1.0",
     "standard-version": "^9.0.0"
   }
 }

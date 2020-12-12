@@ -7,9 +7,15 @@ module.exports = {
   render: {
     resourceHints: false
   },
+  css: [
+    '~/assets/styles/default.scss'
+  ],
+  build: {
+    extractCSS: true
+  },
   modules: [
-    [ 'nuxt-i18n', {
-      locales: [ 'en', 'fr' ],
+    ['nuxt-i18n', {
+      locales: ['en', 'fr'],
       defaultLocale: 'en',
       vueI18n: {
         fallbackLocale: 'en',
@@ -22,10 +28,11 @@ module.exports = {
           }
         }
       }
-    } ],
+    }],
     { handler: require('../') }
   ],
   amp: {
+    css: '~/assets/styles/amp-custom.scss',
     origin: 'http://localhost:3000'
   }
 }

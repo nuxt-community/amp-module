@@ -8251,7 +8251,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-edge@^2.14.8-26776834.e02fecdf:
+nuxt-edge@^2.14.8-26779714.3b19e3f4:
   version "2.14.8-26779714.3b19e3f4"
   resolved "https://registry.yarnpkg.com/nuxt-edge/-/nuxt-edge-2.14.8-26779714.3b19e3f4.tgz#ccfba02de80a0bde02ef0a5b06275101c531d58d"
   integrity sha512-naEOOu+3V5ibWOBgiRlKYnGjP3ITD5qceXMgETokyWJTRH1hYjHpyLidLuHfeEQDOSwS4flYrShRcYJkx5Q6gQ==

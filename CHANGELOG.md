@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/nuxt-community/amp-module/compare/v0.4.0...v0.5.0) (2020-12-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* custom amp styles (#206)
+
+### Features
+
+* auto detect style loader ([2e4fd08](https://github.com/nuxt-community/amp-module/commit/2e4fd08472ed67a8e54a0236ea2feb3eaef8cb55))
+* custom amp styles ([#206](https://github.com/nuxt-community/amp-module/issues/206)) ([3950c70](https://github.com/nuxt-community/amp-module/commit/3950c705456e7c3590a69e71e7dbebda64616a32))
+* **module:** add option to disable validator ([fe3c315](https://github.com/nuxt-community/amp-module/commit/fe3c315213217d959a896ffdd6df52ca1f5bd081)), closes [#184](https://github.com/nuxt-community/amp-module/issues/184)
+* **tags:** update amp-sticky-ads to 1.0 ([aed2938](https://github.com/nuxt-community/amp-module/commit/aed29384a12493d47182803cf5832d95e4d28dd6)), closes [#183](https://github.com/nuxt-community/amp-module/issues/183)
+
+
+### Bug Fixes
+
+* **canonical:** remove unnecessary check of origin ([10fa0fd](https://github.com/nuxt-community/amp-module/commit/10fa0fda630c08f2e7959bcb9953cd7b40acd766)), closes [#181](https://github.com/nuxt-community/amp-module/issues/181)
+* **tags:** remove duplicate scripts ([#198](https://github.com/nuxt-community/amp-module/issues/198)) ([#199](https://github.com/nuxt-community/amp-module/issues/199)) ([f069e57](https://github.com/nuxt-community/amp-module/commit/f069e572aef3db5d93320070bb4634c75cccf0e5))
+
 ## [0.4.0](https://github.com/nuxt-community/amp-module/compare/v0.3.0...v0.4.0) (2020-09-03)
 
 

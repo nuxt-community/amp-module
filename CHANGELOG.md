@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.1](https://github.com/nuxt-community/amp-module/compare/v0.5.0...v0.5.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* add templates directory to npm publish ([#212](https://github.com/nuxt-community/amp-module/issues/212)) ([661d8e3](https://github.com/nuxt-community/amp-module/commit/661d8e3c5e541662e5421d57afcb27d67d54600d))
+
 ## [0.5.0](https://github.com/nuxt-community/amp-module/compare/v0.4.0...v0.5.0) (2020-12-13)
 
 

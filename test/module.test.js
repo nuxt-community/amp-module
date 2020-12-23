@@ -105,7 +105,7 @@ describe('Render AMP version of home page', () => {
     expect(info.canonical).toEqual(url(''))
   })
 
-  test('Keep valid font providers links', () => {
+  test('Keep links of valid font providers', () => {
     expect(info.googleFont).toEqual('https://fonts.googleapis.com/css2?family=Langar&display=swap')
   })
 

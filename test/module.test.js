@@ -77,6 +77,8 @@ describe('Render AMP version of home page', () => {
       const canonical = document.querySelector('[rel=canonical]').getAttribute('href')
       const amphtml = document.querySelector('[rel=amphtml]')
 
+      const googleFont = document.querySelector('[data-hid="google-font"]').getAttribute('href')
+
       const detectedTags = [...document.querySelectorAll('script[custom-element],script[custom-template]')]
         .map(a => a.getAttribute('custom-element') || a.getAttribute('custom-template'))
 
@@ -84,7 +86,8 @@ describe('Render AMP version of home page', () => {
         ampAttr,
         detectedTags,
         canonical,
-        amphtml
+        amphtml,
+        googleFont
       }
     })
     source = await response.text()
@@ -100,6 +103,10 @@ describe('Render AMP version of home page', () => {
 
   test('Valid canonical link', () => {
     expect(info.canonical).toEqual(url(''))
+  })
+
+  test('Keep valid font providers links', () => {
+    expect(info.googleFont).toEqual('https://fonts.googleapis.com/css2?family=Langar&display=swap')
   })
 
   test('Detect all tags', () => {

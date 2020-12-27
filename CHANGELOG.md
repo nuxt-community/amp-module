@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/nuxt-community/amp-module/compare/v0.5.1...v0.5.2) (2020-12-27)
+
+
+### Features
+
+* add option to control inline styles ([4c3e2d5](https://github.com/nuxt-community/amp-module/commit/4c3e2d598ab5bd54e5efab8dd287b5fa57df53e8))
+* **styling:** keep Nuxt style when `css=false` ([#218](https://github.com/nuxt-community/amp-module/issues/218)) ([fdad34b](https://github.com/nuxt-community/amp-module/commit/fdad34b09534392cd6009b4f1a9eaec41c37eb6b))
+
+
+### Bug Fixes
+
+* **validator:** add `isAMP` to req object ([40d4954](https://github.com/nuxt-community/amp-module/commit/40d4954ff28d3eabfdb7b1c0a8ad1057867a21b6))
+* disable sanitizer for amp custom styles ([93a0964](https://github.com/nuxt-community/amp-module/commit/93a0964a59173d916681c2db347c5e183213f0b1))
+* **styles:** do not remove external styles of font providers ([#217](https://github.com/nuxt-community/amp-module/issues/217)) ([c71406b](https://github.com/nuxt-community/amp-module/commit/c71406bb80438abfc61d9b8afd7ede83ef97dbbb))
+
+### [0.5.1](https://github.com/nuxt-community/amp-module/compare/v0.5.0...v0.5.1) (2020-12-15)
+
+
+### Bug Fixes
+
+* add templates directory to npm publish ([#212](https://github.com/nuxt-community/amp-module/issues/212)) ([661d8e3](https://github.com/nuxt-community/amp-module/commit/661d8e3c5e541662e5421d57afcb27d67d54600d))
+
 ## [0.5.0](https://github.com/nuxt-community/amp-module/compare/v0.4.0...v0.5.0) (2020-12-13)
 
 

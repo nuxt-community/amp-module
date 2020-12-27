@@ -132,7 +132,11 @@
 export default {
   head () {
     return {
-      title: 'AMP module for Nuxtjs'
+      title: 'AMP module for Nuxtjs',
+      link: [
+        { rel: 'preconnecy', href: 'https://fonts.gstatic.com' },
+        { hid: 'google-font', rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Langar&display=swap' }
+      ]
     }
   }
 }
@@ -140,7 +144,7 @@ export default {
 
 <style>
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Langar, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body > * {
   margin: 0.5rem 0 0.5rem 0.5rem;

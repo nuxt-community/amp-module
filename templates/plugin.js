@@ -13,7 +13,12 @@ export default async function (ctx, inject) {
     Object.keys(result).forEach(key => inject(key, result[key]))
   }
   <% if (options.css) { %>if (ctx.$isAMP) {
+    const { head } = ctx.app
+    // Disable sanitizer
+    head.__dangerouslyDisableSanitizersByTagID = head.__dangerouslyDisableSanitizersByTagID || {}
+    head.__dangerouslyDisableSanitizersByTagID['amp-custom'] = ['innerHTML']
+
     const cssText = await import('!!raw-loader<%= options.cssLoader %>!<%= options.css %>').then(m => m.default || m)
-    ctx.app.head.style.push({ cssText, type: 'text/css', 'amp-custom': '' })
+    head.style.push({ cssText, type: 'text/css', hid: 'amp-custom' })
   }<% } %>
 }

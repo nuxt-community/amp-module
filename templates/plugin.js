@@ -14,6 +14,6 @@ export default async function (ctx, inject) {
   }
   <% if (options.css) { %>if (ctx.$isAMP) {
     const cssText = await import('!!raw-loader<%= options.cssLoader %>!<%= options.css %>').then(m => m.default || m)
-    ctx.app.head.style.push({ cssText, type: 'text/css', 'amp-custom': '' })
+    ctx.app.head.style.push({ cssText, type: 'text/css', hid: 'amp-custom' })
   }<% } %>
 }

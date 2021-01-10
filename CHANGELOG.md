@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.3](https://github.com/nuxt-community/amp-module/compare/v0.5.2...v0.5.3) (2021-01-10)
+
+
+### Bug Fixes
+
+* **style:** resolve uncorrect remove style regex ([#225](https://github.com/nuxt-community/amp-module/issues/225)) ([d995b23](https://github.com/nuxt-community/amp-module/commit/d995b23e5d061c1783d342d81855aec6aa202d2e))
+* disable sanitizer for amp custom style ([063dc14](https://github.com/nuxt-community/amp-module/commit/063dc1429058f7c3ae7dc132821989b69a817ff5))
+
 ### [0.5.2](https://github.com/nuxt-community/amp-module/compare/v0.5.1...v0.5.2) (2020-12-27)
 
 

@@ -16,7 +16,7 @@ export default async function (ctx, inject) {
     const { head } = ctx.app
     // Disable sanitizer
     head.__dangerouslyDisableSanitizersByTagID = head.__dangerouslyDisableSanitizersByTagID || {}
-    head.__dangerouslyDisableSanitizersByTagID['amp-custom'] = ['innerHTML']
+    head.__dangerouslyDisableSanitizersByTagID['amp-custom'] = ['cssText']
 
     const cssText = await import('!!raw-loader<%= options.cssLoader %>!<%= options.css %>').then(m => m.default || m)
     head.style.push({ cssText, type: 'text/css', hid: 'amp-custom' })

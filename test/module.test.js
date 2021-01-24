@@ -37,7 +37,9 @@ describe('Generates routes', () => {
 
   test('Routes should be correctly localized', () => {
     routes.forEach((route) => {
-      expect(route.alias).toEqual([`/amp${route.path}`])
+      if (!route.path.startsWith('/amp')) {
+        expect(route.alias).toEqual([`/amp${route.path}`])
+      }
     })
   })
 })
@@ -120,6 +122,30 @@ describe('Render AMP version of home page', () => {
 
   test('Render plain text', () => {
     expect(source).toContain('AMP is easy')
+  })
+})
+
+describe('Render hello page', () => {
+  let source
+  beforeAll(async () => {
+    const response = await page.goto(url('/hello'))
+    source = await response.text()
+  })
+
+  test('Hello Everyone', () => {
+    expect(source).toContain('Hello Everyone')
+  })
+})
+
+describe('Render AMP version of hello page', () => {
+  let source
+  beforeAll(async () => {
+    const response = await page.goto(url('/amp/hello'))
+    source = await response.text()
+  })
+
+  test('Hello AMP', () => {
+    expect(source).toContain('Hello AMP')
   })
 })
 

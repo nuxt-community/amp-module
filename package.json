@@ -1,6 +1,6 @@
 {
   "name": "@nuxtjs/amp",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "AMP Module for Nuxt",
   "license": "MIT",
   "contributors": [
@@ -41,24 +41,24 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "codecov": "^3.8.1",
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.1.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "4.1.0",
-    "eslint-plugin-vue": "^7.4.1",
+    "eslint-plugin-vue": "^7.5.0",
     "get-port": "5.1.1",
-    "husky": "^4.3.7",
+    "husky": "^4.3.8",
     "jest": "^26.6.3",
     "jest-puppeteer": "^4.4.0",
     "node-sass": "^5.0.0",
     "nuxt-edge": "^2.14.8-26779714.3b19e3f4",
-    "nuxt-i18n": "^6.17.0",
+    "nuxt-i18n": "^6.18.0",
     "puppeteer": "^5.5.0",
     "request": "2.88.2",
-    "sass-loader": "^10.1.0",
+    "sass-loader": "^10.1.1",
     "standard-version": "^9.1.0"
   }
 }

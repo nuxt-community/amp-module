@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.4](https://github.com/nuxt-community/amp-module/compare/v0.5.3...v0.5.4) (2021-01-24)
+
+
+### Bug Fixes
+
+* **routes:** reorder routes to override AMP pages ([#233](https://github.com/nuxt-community/amp-module/issues/233)) ([a9c656d](https://github.com/nuxt-community/amp-module/commit/a9c656d64addc7bdc711cccdbef33566cc035d10))
+
 ### [0.5.3](https://github.com/nuxt-community/amp-module/compare/v0.5.2...v0.5.3) (2021-01-10)
 
 

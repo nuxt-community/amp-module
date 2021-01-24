@@ -14,6 +14,13 @@ module.exports = {
     extractCSS: true
   },
   modules: [
+    [
+      // Simple usage
+      '@nuxtjs/amp',
+  
+      // With options
+      ['@nuxtjs/amp', { /* module options */ }]
+    ],
     ['nuxt-i18n', {
       locales: ['en', 'fr'],
       defaultLocale: 'en',

@@ -27,6 +27,7 @@
     "templates"
   ],
   "dependencies": {
+    "@nuxtjs/amp": "^0.5.3",
     "amphtml-validator": "^1.0.34",
     "chalk": "^4.1.0",
     "consola": "^2.15.0",

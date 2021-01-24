@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>This is AMP custom layout</div>
+    <div>TSTEVE BUSHEMIlayout</div>
     <Nuxt />
   </div>
 </template>

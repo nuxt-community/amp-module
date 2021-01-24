@@ -1686,6 +1686,16 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
+"@nuxtjs/amp@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/amp/-/amp-0.5.3.tgz#74c71bb9fab14197331d9a78313d4608a8a17a99"
+  integrity sha512-HII4mnGZ7DZrdwlAAxhIIdYkaP6IEFZhwn8znsmsOBApBiOKhYAiqFU/VJY1isQqaapXIryg0NABD9SbGMuLPQ==
+  dependencies:
+    amphtml-validator "^1.0.34"
+    chalk "^4.1.0"
+    consola "^2.15.0"
+    raw-loader "^4.0.2"
+
 "@nuxtjs/eslint-config@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/eslint-config/-/eslint-config-5.0.0.tgz#d66143ee4ada9d944de0bfbe2d7e4693a2e20d60"

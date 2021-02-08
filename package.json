@@ -58,7 +58,7 @@
     "nuxt-i18n": "^6.20.0",
     "puppeteer": "^7.0.1",
     "request": "2.88.2",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^11.0.1",
     "standard-version": "^9.1.0"
   }
 }

@@ -25,3 +25,6 @@ And AMP layout
 @import "~/assets/styles/default.amp.css"
 </style>
 ```
+# extractCSS behavior
+Unfortunately there is no way (at the moment) to support internal and scoped component styles with `extractCSS`. Even with the `removeInlineStyles` option turned off.
+You should copy or move these styles to assets.

@@ -56,7 +56,7 @@
     "node-sass": "^5.0.0",
     "nuxt-edge": "^2.14.8-26779714.3b19e3f4",
     "nuxt-i18n": "^6.20.2",
-    "puppeteer": "^7.1.0",
+    "puppeteer": "^8.0.0",
     "request": "2.88.2",
     "sass-loader": "^10.1.1",
     "standard-version": "^9.1.1"

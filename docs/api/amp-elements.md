@@ -1,5 +1,5 @@
 # AMP elements
-`amp-module` automatically detect AMP elements inside page and inject required scripts.  
+`amp-module` automatically detect AMP elements inside page and inject required scripts.
 List of auto detected AMP elements:
 - [amp-3d-gltf](https://amp.dev/documentation/components/amp-3d-gltf)
 - [amp-3q-player](https://amp.dev/documentation/components/amp-3q-player)
@@ -117,3 +117,4 @@ List of auto detected AMP elements:
 - [amp-wistia-player](https://amp.dev/documentation/components/amp-wistia-player)
 - [amp-yotpo](https://amp.dev/documentation/components/amp-yotpo)
 - [amp-youtube](https://amp.dev/documentation/components/amp-youtube)
+- [amp-truncate-text](https://amp.dev/documentation/components/amp-truncate-text)

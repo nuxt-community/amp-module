@@ -7,7 +7,7 @@
 [![Dependencies][david-dm-src]][david-dm-href]
 [![Standard JS][standard-js-src]][standard-js-href]
 
-> AMP (Accelerated Mobile Pages) Module for Nuxt
+> AMP (Accelerated Mobile Pages) Module for Nuxt 2
 
 **DEMO**: https://codesandbox.io/s/github/nuxt-community/amp-module/
 

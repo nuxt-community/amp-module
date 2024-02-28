@@ -20,5 +20,13 @@ export default async function (ctx, inject) {
 
     const cssText = await import('!!raw-loader<%= options.cssLoader %>!<%= options.css %>').then(m => m.default || m)
     head.style.push({ cssText, type: 'text/css', hid: 'amp-custom' })
+    <% if (options.routesCss) { %>
+      <% for (route in options.routesCss) { %>
+          if (ctx.route.name == '<%= route %>') {
+            const cssText = await import('!!raw-loader<%= options.cssLoader %>!<%= options.routesCss[route] %>').then(m => m.default || m)
+            head.style.push({ cssText, type: 'text/css', hid: 'amp-custom-<%= route %>' })
+          }
+      <% } %>
+    <% } %>
   }<% } %>
 }

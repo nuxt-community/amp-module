@@ -9,9 +9,6 @@
 
 > AMP (Accelerated Mobile Pages) Module for Nuxt 2
 
-Looking for a Nuxt 3 alternative? Try out:
-- [@vite-pwa/nuxt](https://vite-pwa-org.netlify.app/frameworks/nuxt.html)
-
 **DEMO**: https://codesandbox.io/s/github/nuxt-community/amp-module/
 
 [📖 **Release Notes**](./CHANGELOG.md)

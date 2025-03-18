@@ -29,7 +29,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.34",
     "chalk": "^4.1.0",
-    "consola": "^2.15.3",
+    "consola": "^3.4.2",
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {

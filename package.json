@@ -33,8 +33,8 @@
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/preset-env": "^7.13.15",
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "@nuxtjs/eslint-config": "^6.0.0",
